@@ -231,6 +231,7 @@ template {
 html {
   font-size: 62.5%;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, p, ul {
@@ -281,10 +282,6 @@ p {
   line-height: 4rem;
 }
 
-header {
-  height: 100vh;
-}
-
 .logoNavContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,6 +290,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 2.5rem;
+  height: 10vh;
 }
 
 .navContainer {
@@ -314,7 +312,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .headerText,
@@ -336,4 +334,25 @@ header {
 
 .headerImage {
   padding-top: 7.5rem;
+}
+
+.headerArrowContainer {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.headerArrowContainer .fa-caret-down {
+  color: #00BFA6;
+  font-size: 5rem;
+  padding-top: 2.5rem;
+  -webkit-transition: ease 100ms;
+  transition: ease 100ms;
+}
+.headerArrowContainer .fa-caret-down:hover, .headerArrowContainer .fa-caret-down:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }

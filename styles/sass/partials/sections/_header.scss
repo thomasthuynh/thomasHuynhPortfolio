@@ -1,13 +1,10 @@
 @use '../global/variables' as v;
 
-header {
-    height: 100vh;
-}
-
 .logoNavContainer {
     display: flex;
     justify-content: space-between;
     padding-top: 2.5rem;
+    height: 10vh;
 }
 
 .navContainer {
@@ -22,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .headerText, 
@@ -53,3 +50,20 @@ header {
     padding-top: 7.5rem;
 }
 
+.headerArrowContainer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+
+    .fa-caret-down {
+        color: v.$neon;
+        font-size: 5rem;
+        padding-top: 2.5rem;
+        transition: ease 100ms;
+        
+        &:hover,
+        &:focus {
+          transform: scale(1.10);
+      }
+    }
+}
