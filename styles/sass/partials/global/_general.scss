@@ -29,10 +29,14 @@ img {
     max-width: 100%;
 }
 
-header {
-    background-color: v.$primary;
+body {
+    background-color: v.$primaryColour;
 }
 
 section:nth-of-type(odd) {
-    background-color: v.$secondary;
+    background-color: v.$secondaryColour;
+}
+
+.neonText {
+    color: v.$neon;
 }

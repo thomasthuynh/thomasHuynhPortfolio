@@ -1,41 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1280px;
-}
-
-html {
-  font-size: 62.5%;
-  color: #fff;
-}
-
-h1, h2, h3, h4, p, ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  background-color: #14141b;
-}
-
-section:nth-of-type(odd) {
-  background-color: #1d1d25;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -259,6 +222,118 @@ template {
   overflow: hidden;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
 html {
+  font-size: 62.5%;
+  color: #fff;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #14141b;
+}
+
+section:nth-of-type(odd) {
+  background-color: #1d1d25;
+}
+
+.neonText {
+  color: #00BFA6;
+}
+
+body {
   font-family: "Roboto", sans-serif;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 8rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+header {
+  height: 100vh;
+}
+
+.logoNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2.5rem;
+}
+
+.navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navContainer li {
+  padding-left: 5rem;
+}
+
+.headerTextImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.headerText,
+.headerImage {
+  width: 45%;
+}
+
+.headerText p {
+  padding: 2rem 0;
+}
+.headerText .fa-brands {
+  color: #00BFA6;
+  font-size: 2.5rem;
+  padding-right: 1.5rem;
+}
+.headerText a:hover, .headerText a:focus {
+  opacity: 0.75;
+}
+
+.headerImage {
+  padding-top: 7.5rem;
 }

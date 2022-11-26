@@ -1,4 +1,8 @@
-@use './partials/global/general';
+// Global
 @use './partials/global/setup';
+@use './partials/global/general';
 @use './partials/global/typography';
 @use './partials/global/variables';
+
+// Sections
+@use './partials/sections/header';
