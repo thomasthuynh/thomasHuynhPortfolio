@@ -338,17 +338,12 @@ p {
 
 .headerArrowContainer {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 .headerArrowContainer .fa-caret-down {
   color: #00BFA6;
   font-size: 5rem;
-  padding-top: 2.5rem;
+  margin-top: 2.5rem;
   -webkit-transition: ease 100ms;
   transition: ease 100ms;
 }

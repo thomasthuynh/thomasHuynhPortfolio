@@ -52,13 +52,12 @@
 
 .headerArrowContainer {
     height: 10vh;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 
     .fa-caret-down {
         color: v.$neon;
         font-size: 5rem;
-        padding-top: 2.5rem;
+        margin-top: 2.5rem;
         transition: ease 100ms;
         
         &:hover,
