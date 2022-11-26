@@ -6,8 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas' Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/0f60a8fc75.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome to my Portfolio!</h1>
+    <header>
+        <div class="logoNavContainer">
+            <p>Thomas Huynh</p>
+            <ul class="navContainer">
+                <li><a href="">About</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Hey, I'm Thomas, a Front End Developer!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, necessitatibus.</p>
+        <button>Let's get in touch</button>
+    </header>
+
+    <section class="technologyStack">
+        <div class="technologyStackTextContainer">
+            <h2>Here is my technology stack</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolore.</p>
+        </div>
+
+        <div class="technologyStackImageContainer">
+            <ul>
+                <li><img src="./icons/icons8-html-5.svg" alt="HTML"></li>
+                <li><img src="./icons/icons8-css3.svg" alt="CSS"></li>
+                <li><img src="./icons/icons8-sass.svg" alt="SASS"></li>
+                <li><img src="./icons/icons8-javascript.svg" alt="JavaScript"></li>
+                <li><img src="./icons/icons8-firebase.svg" alt="Firebase"></li>
+                <li><img src="./icons/icons8-react-native.svg" alt="React"></li>
+                <li><img src="./icons/icons8-git.svg" alt="Git"></li>
+                <li><img src="./icons/icons8-github-48.svg" alt="Github"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="myProjects">
+        <h2>Here are some of my projects</h2>
+        <div class="firstProjectContainer">
+            <div class="textToolsLinksContainer">
+                <h3>Sanctuary Helpers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolores!</p>
+
+                <h4>Tools</h4>
+                <img src="./icons/icons8-html-5.svg" alt="HTML">
+                <img src="./icons/icons8-css3.svg" alt="CSS">
+
+                <h4>Links</h4>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+
+            <div class="projectImageContainer">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="secondProject">
+            <div class="textToolsLinksContainer">
+                <h3>Who's That Pokemon?</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, suscipit.</p>
+
+                <h4>Tools</h4>
+                <img src="./icons/icons8-html-5.svg" alt="HTML">
+                <img src="./icons/icons8-css3.svg" alt="CSS">
+                <img src="./icons/icons8-javascript.svg" alt="JavaScript">
+
+                <h4>Links</h4>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+
+            <div class="projectImageContainer">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="contactMe">
+        <div class="contactMeText">
+            <h2>Let's get in touch</h2>
+            <p>Connect with me via email or through my Linkedin</p>
+        </div>
+
+        <div class="contactMeForm">
+            <form action="submit">
+                <div class="nameAndEmail">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+
+                <div class="userMessage">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <button type="submit">Message me</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
