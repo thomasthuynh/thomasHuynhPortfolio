@@ -316,6 +316,23 @@ p {
 .navContainer li {
   padding-left: 5rem;
 }
+.navContainer a {
+  position: relative;
+}
+.navContainer a::after {
+  content: "";
+  height: 0.5rem;
+  width: 0;
+  background: #00BFA6;
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navContainer a:hover::after, .navContainer a:focus::after {
+  width: 100%;
+}
 
 .headerTextImageContainer {
   display: -webkit-box;
@@ -576,4 +593,17 @@ p {
 }
 .userMessage button:hover, .userMessage button:focus {
   background-color: #00BFA6;
+}
+
+footer {
+  height: 7.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

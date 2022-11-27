@@ -13,6 +13,26 @@
     li {
         padding-left: 5rem;
     }
+
+    a {
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 0.5rem;
+            width: 0;
+            background: v.$neon;
+            position: absolute;
+            left: 0;
+            top: 2.5rem;
+            transition: 0.5s;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            width: 100%;
+        }
+    }
 }
 
 .headerTextImageContainer {
