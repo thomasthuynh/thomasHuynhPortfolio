@@ -1,0 +1,62 @@
+@use '../global/variables' as v;
+
+.myProjects {
+    h2 {
+        text-align: center;
+        padding: 4rem 0 10rem 0;
+    }
+}
+
+.projectContainer {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.projectTextToolsLinksContainer, 
+.projectImageContainer {
+    width: 45%;
+}
+
+.projectTextContainer {
+    p {
+        padding: 2rem 0 4rem 0;
+    }
+}
+
+.projectToolsLinksContainer {
+    display: flex;
+}
+
+.projectToolsContainer {
+    margin-right: 10rem;
+
+    img {
+        transform: scale(0.5);
+        margin-top: -1.5rem;
+        margin-left: -2.75rem;
+
+        &:nth-of-type(n + 2) {
+            margin-left: -3.75rem;
+        }
+    }
+
+}
+
+.projectLinksContainer {
+    .fa-github,
+    .fa-link {
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    a {
+        &:hover,
+        &:focus {
+            opacity: 0.75;
+        }
+    }
+}
