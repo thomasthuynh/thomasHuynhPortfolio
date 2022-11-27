@@ -253,11 +253,11 @@ img {
 }
 
 body {
-  background-color: #14141b;
+  background-color: #141428;
 }
 
 section:nth-of-type(odd) {
-  background-color: #1d1d25;
+  background-color: #1a1a32;
 }
 
 .neonText {
@@ -434,7 +434,7 @@ p {
 
 .myProjects h2 {
   text-align: center;
-  padding: 4rem 0 10rem 0;
+  padding: 4rem 0 8rem 0;
 }
 
 .projectContainer {
@@ -487,4 +487,93 @@ p {
 }
 .projectLinksContainer a:hover, .projectLinksContainer a:focus {
   opacity: 0.75;
+}
+
+.contactMe {
+  height: 80vh;
+}
+.contactMe h2 {
+  text-align: center;
+  padding: 4rem 0 8rem 0;
+}
+
+.contactMeTextFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactMeText,
+.contactMeForm {
+  width: 45%;
+}
+
+.contactMeText p {
+  padding: 2rem 0 6rem 0;
+}
+
+.contactMeImage {
+  width: 75%;
+}
+
+.nameAndEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+.nameAndEmail label {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.nameAndEmail input {
+  outline: none;
+  height: 5rem;
+  width: 25rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.nameContainer {
+  margin-right: 8rem;
+}
+
+.userMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.userMessage label {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.userMessage textarea {
+  outline: none;
+  resize: none;
+  height: 20rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.userMessage button {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background: none;
+  border: 0.1rem solid #00BFA6;
+  cursor: pointer;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+.userMessage button:hover, .userMessage button:focus {
+  background-color: #00BFA6;
 }

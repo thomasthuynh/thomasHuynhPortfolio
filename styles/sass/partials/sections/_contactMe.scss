@@ -1,0 +1,88 @@
+@use '../global/variables' as v;
+
+.contactMe {
+    height: 80vh;
+
+    h2 {
+        text-align: center;
+        padding: 4rem 0 8rem 0;
+    }
+}
+
+.contactMeTextFormContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactMeText,
+.contactMeForm {
+    width: 45%;
+}
+
+.contactMeText {
+    p {
+        padding: 2rem 0 6rem 0;
+    }
+}
+
+.contactMeImage {
+    width: 75%;
+}
+
+.nameAndEmail {
+    display: flex;
+    margin-bottom: 5rem;
+
+    label {
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    input {
+        outline: none;
+        height: 5rem;
+        width: 25rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.nameContainer {
+    margin-right: 8rem;
+}
+
+.userMessage {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    textarea {
+        outline: none;
+        resize: none;
+        height: 20rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    button {
+        margin-top: 4rem;
+        padding: 2rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: v.$white;
+        background: none;
+        border: 0.1rem solid v.$neon;
+        cursor: pointer;
+        transition: ease 300ms;
+
+        &:hover,
+        &:focus {
+            background-color: v.$neon;
+        }
+    }
+}
