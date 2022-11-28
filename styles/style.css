@@ -437,8 +437,8 @@ p {
 .technologyStackIcons li {
   width: 25%;
   text-align: center;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 .technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon, .technologyStackIcons li:active .languageIcon {
   -webkit-transform: scale(1.1);
@@ -452,6 +452,8 @@ p {
 }
 
 .languageIcon {
+  height: 9.6rem;
+  width: 9.6rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -461,6 +463,7 @@ p {
   transition: all 0.3s ease;
   -webkit-transform: scale(0);
           transform: scale(0);
+  padding-top: 0.5rem;
 }
 
 .myProjects h2 {
@@ -500,14 +503,11 @@ p {
 .projectToolsContainer {
   margin-right: 10rem;
 }
-.projectToolsContainer img {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  margin-top: -1.5rem;
-  margin-left: -2.75rem;
-}
-.projectToolsContainer img:nth-of-type(n + 2) {
-  margin-left: -4.25rem;
+.projectToolsContainer .languageIcon {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .projectLinksContainer .fa-github,
@@ -665,11 +665,8 @@ footer {
     font-size: 1.9rem;
     line-height: 2.6rem;
   }
-  .projectToolsContainer {
-    margin-right: 10rem;
-  }
-  .projectToolsContainer img:nth-of-type(n + 2) {
-    margin-left: -4.75rem;
+  .projectToolsContainer .languageIcon {
+    margin-right: 1.25rem;
   }
   .projectLinksContainer .fa-github,
 .projectLinksContainer .fa-link {
@@ -825,22 +822,13 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
   }
   .projectToolsContainer {
     margin-right: 3rem;
-    margin-left: -3rem;
-  }
-  .projectToolsContainer img {
-    margin-left: 0;
   }
   .projectLinksContainer {
     margin-left: 3rem;
-  }
-  .projectLinksContainer .fa-github,
-.projectLinksContainer .fa-link {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
   }
   .contactMeTextFormContainer {
     -webkit-box-orient: vertical;

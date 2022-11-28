@@ -37,14 +37,11 @@
 .projectToolsContainer {
     margin-right: 10rem;
 
-    img {
-        transform: scale(0.5);
-        margin-top: -1.5rem;
-        margin-left: -2.75rem;
-
-        &:nth-of-type(n + 2) {
-            margin-left: -4.25rem;
-        }
+    .languageIcon {
+        height: 4rem;
+        width: 4rem;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
     }
 }
 

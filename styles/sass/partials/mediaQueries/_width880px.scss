@@ -87,26 +87,15 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
     }
 
     .projectToolsContainer {
         margin-right: 3rem;
-        margin-left: -3rem;
-
-        img {
-            margin-left: 0;
-        }
     }
 
     .projectLinksContainer {
         margin-left: 3rem;
-
-        .fa-github,
-        .fa-link {
-            margin-right: 0.75rem;
-            margin-left: 0.75rem;
-        }
     }
 
 

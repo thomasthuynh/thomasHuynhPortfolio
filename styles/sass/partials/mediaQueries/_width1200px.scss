@@ -66,13 +66,8 @@
     }
 
     .projectToolsContainer {
-        margin-right: 10rem;
-    
-        img {
-    
-            &:nth-of-type(n + 2) {
-                margin-left: -4.75rem;
-            }
+        .languageIcon {
+            margin-right: 1.25rem;
         }
     }
 
