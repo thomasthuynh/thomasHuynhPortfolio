@@ -327,8 +327,8 @@ p {
   position: absolute;
   left: 0;
   top: 2.5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .navContainer a:hover::after, .navContainer a:focus::after {
   width: 100%;
@@ -377,8 +377,8 @@ p {
   color: #00BFA6;
   font-size: 5rem;
   margin-top: 2.5rem;
-  -webkit-transition: ease 100ms;
-  transition: ease 100ms;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 .headerArrowContainer .fa-caret-down:hover, .headerArrowContainer .fa-caret-down:focus {
   -webkit-transform: scale(1.1);
@@ -405,7 +405,7 @@ p {
 }
 
 .technologyStackText,
-.technologyStackImage {
+.technologyStackImages {
   width: 45%;
 }
 
@@ -435,18 +435,29 @@ p {
 .technologyStackIcons li {
   width: 25%;
   text-align: center;
-  padding: 1.75rem;
+  padding-bottom: 1rem;
 }
-
-.languageIcon {
-  -webkit-transition: ease 300ms;
-  transition: ease 300ms;
-}
-.languageIcon:hover, .languageIcon:focus {
+.technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: brightness(125%);
           filter: brightness(125%);
+}
+.technologyStackIcons li:hover .languageText, .technologyStackIcons li:focus .languageText {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.languageIcon {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.languageText {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .myProjects h2 {
@@ -493,7 +504,7 @@ p {
   margin-left: -2.75rem;
 }
 .projectToolsContainer img:nth-of-type(n + 2) {
-  margin-left: -3.75rem;
+  margin-left: -4.25rem;
 }
 
 .projectLinksContainer .fa-github,
@@ -588,8 +599,8 @@ p {
   background: none;
   border: 0.1rem solid #00BFA6;
   cursor: pointer;
-  -webkit-transition: ease 300ms;
-  transition: ease 300ms;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .userMessage button:hover, .userMessage button:focus {
   background-color: #00BFA6;

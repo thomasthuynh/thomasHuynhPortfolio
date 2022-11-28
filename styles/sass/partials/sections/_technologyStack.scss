@@ -12,7 +12,7 @@
 }
 
 .technologyStackText, 
-.technologyStackImage {
+.technologyStackImages {
     width: 45%;
 }
 
@@ -33,16 +33,26 @@
     li {
         width: 25%;
         text-align: center;
-        padding: 1.75rem;
+        padding-bottom: 1rem;
+
+        &:hover .languageIcon,
+        &:focus .languageIcon {
+            transform: scale(1.10);
+            filter: brightness(125%);
+        }
+
+        &:hover .languageText,
+        &:focus .languageText {
+            transform: scale(1);
+        }
     }
 }
 
 .languageIcon {
-    transition: ease 300ms;
+    transition: all 0.3s ease;
+}
 
-    &:hover,
-    &:focus {
-        transform: scale(1.10);
-        filter: brightness(125%);
-    }
+.languageText {
+    transition: all 0.3s ease;
+    transform: scale(0);
 }

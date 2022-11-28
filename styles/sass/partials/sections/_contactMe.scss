@@ -78,7 +78,7 @@
         background: none;
         border: 0.1rem solid v.$neon;
         cursor: pointer;
-        transition: ease 300ms;
+        transition: all 0.3s ease;
 
         &:hover,
         &:focus {
