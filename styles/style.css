@@ -322,7 +322,7 @@ p {
 }
 .navContainer a::after {
   content: "";
-  height: 0.5rem;
+  height: 0.4rem;
   width: 0;
   background: #00BFA6;
   position: absolute;
@@ -367,7 +367,7 @@ p {
 }
 
 .headerImage {
-  padding-top: 7.5rem;
+  margin-top: 7.5rem;
   min-width: 47.5rem;
 }
 
@@ -440,13 +440,13 @@ p {
   padding-right: 2rem;
   padding-bottom: 1rem;
 }
-.technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon {
+.technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon, .technologyStackIcons li:active .languageIcon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: brightness(125%);
           filter: brightness(125%);
 }
-.technologyStackIcons li:hover .languageText, .technologyStackIcons li:focus .languageText {
+.technologyStackIcons li:hover .languageText, .technologyStackIcons li:focus .languageText, .technologyStackIcons li:active .languageIcon {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -748,5 +748,120 @@ footer {
 .userMessage textarea,
 .userMessage button {
     font-size: 1.75rem;
+  }
+}
+@media (max-width: 880px) {
+  .navContainer li {
+    padding-left: 4rem;
+  }
+  .headerTextImageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerText,
+.headerImage {
+    width: 60%;
+  }
+  .headerImage {
+    margin-top: 2.5rem;
+    margin-right: 5rem;
+  }
+  .technologyStack {
+    height: auto;
+    padding: 4rem 0;
+  }
+  .technologyStackTextImageContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .technologyStackText,
+.technologyStackImages {
+    width: 95%;
+  }
+  .technologyStackText h2 {
+    text-align: center;
+  }
+  .technologyStackText p {
+    padding-bottom: 5rem;
+  }
+  .myProjects h2 {
+    padding: 4rem 0 6rem 0;
+  }
+  .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 12rem;
+  }
+  .projectTextToolsLinksContainer,
+.projectImageContainer {
+    width: 95%;
+  }
+  .projectTextContainer p {
+    padding: 2rem 0 3rem 0;
+  }
+  .projectTextContainer h3 {
+    text-align: center;
+  }
+  .projectToolsLinksContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .projectToolsContainer {
+    margin-right: 3rem;
+    margin-left: -3rem;
+  }
+  .projectToolsContainer img {
+    margin-left: 0;
+  }
+  .projectLinksContainer {
+    margin-left: 3rem;
+  }
+  .projectLinksContainer .fa-github,
+.projectLinksContainer .fa-link {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+  .contactMeTextFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactMeText,
+.contactMeForm {
+    width: 95%;
+  }
+  .contactMe h2 {
+    padding: 4rem 0 4rem 0;
+  }
+  .contactMeText p {
+    padding: 1rem 0 5rem 0;
+  }
+  .contactMeImage {
+    display: none;
   }
 }

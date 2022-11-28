@@ -37,13 +37,15 @@
         padding-bottom: 1rem;
 
         &:hover .languageIcon,
-        &:focus .languageIcon {
+        &:focus .languageIcon,
+        &:active .languageIcon {
             transform: scale(1.10);
             filter: brightness(125%);
         }
 
         &:hover .languageText,
-        &:focus .languageText {
+        &:focus .languageText,
+        &:active .languageIcon {
             transform: scale(1);
         }
     }

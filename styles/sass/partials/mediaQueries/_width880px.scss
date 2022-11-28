@@ -1,0 +1,140 @@
+@use '../global/variables' as v;
+
+@media (max-width: 880px) {
+
+// Header
+
+    .navContainer {
+        li {
+            padding-left: 4rem;
+        }
+    }
+
+    .headerTextImageContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headerText, 
+    .headerImage {
+        width: 60%;
+    }
+
+    .headerImage {
+        margin-top: 2.5rem;
+        margin-right: 5rem;
+    }
+
+
+// Technology Stack
+
+    .technologyStack {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .technologyStackTextImageContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technologyStackText, 
+    .technologyStackImages {
+        width: 95%;
+    }
+
+    .technologyStackText {
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            padding-bottom: 5rem;
+        }
+    }
+
+
+// My Projects
+
+    .myProjects {
+        h2 {
+            padding: 4rem 0 6rem 0;
+        }
+    }
+
+    .projectContainer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 12rem;
+    }
+
+    .projectTextToolsLinksContainer, 
+    .projectImageContainer {
+        width: 95%;
+    }
+
+    .projectTextContainer {
+        p {
+            padding: 2rem 0 3rem 0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .projectToolsLinksContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .projectToolsContainer {
+        margin-right: 3rem;
+        margin-left: -3rem;
+
+        img {
+            margin-left: 0;
+        }
+    }
+
+    .projectLinksContainer {
+        margin-left: 3rem;
+
+        .fa-github,
+        .fa-link {
+            margin-right: 0.75rem;
+            margin-left: 0.75rem;
+        }
+    }
+
+
+// Contact Me 
+
+    .contactMeTextFormContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactMeText,
+    .contactMeForm {
+        width: 95%;
+    }
+
+    .contactMe {
+        h2 {
+            padding: 4rem 0 4rem 0;
+        }
+    }
+
+    .contactMeText {
+        p {
+            padding: 1rem 0 5rem 0;
+        }
+    }
+
+    .contactMeImage {
+        display: none;
+    }
+}

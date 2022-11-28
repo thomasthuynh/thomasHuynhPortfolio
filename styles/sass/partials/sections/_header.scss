@@ -19,7 +19,7 @@
 
         &::after {
             content: "";
-            height: 0.5rem;
+            height: 0.4rem;
             width: 0;
             background: v.$neon;
             position: absolute;
@@ -68,7 +68,7 @@
 }   
 
 .headerImage{
-    padding-top: 7.5rem;
+    margin-top: 7.5rem;
     min-width: 47.5rem;
 }
 
