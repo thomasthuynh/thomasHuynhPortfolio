@@ -10,3 +10,7 @@
 @use './partials/sections/myProjects';
 @use './partials/sections/contactMe';
 @use './partials/sections/footer';
+
+// Media Queries
+@use './partials/mediaQueries/width1200px';
+@use './partials/mediaQueries/width1040px';

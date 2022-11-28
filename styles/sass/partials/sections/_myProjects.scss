@@ -3,16 +3,14 @@
 .myProjects {
     h2 {
         text-align: center;
-        padding: 4rem 0 8rem 0;
+        padding: 4rem 0 10rem 0;
     }
 }
 
 .projectContainer {
-    height: 40vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
+    padding-bottom: 12rem;
 }
 
 .projectTextToolsLinksContainer, 
@@ -23,6 +21,12 @@
 .projectTextContainer {
     p {
         padding: 2rem 0 4rem 0;
+    }
+}
+
+.projectImageContainer {
+    img {
+        border-radius: 0.5rem;
     }
 }
 
@@ -42,7 +46,6 @@
             margin-left: -4.25rem;
         }
     }
-
 }
 
 .projectLinksContainer {
