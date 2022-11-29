@@ -4,6 +4,11 @@
 
 // General 
 
+    nav {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
     h2 {
         font-size: 2.5rem;
         line-height: 4rem;
@@ -73,7 +78,6 @@
     .languageIcon {
         height: 8rem;
         width: 8rem;
-        transition: all 0.3s ease;
     }
 
 
@@ -111,8 +115,6 @@
     // Contact Me
 
     .contactMe {
-        padding-bottom: 6rem;
-
         h2 {
             padding: 4rem 0 3.5rem 0;
         }

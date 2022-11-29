@@ -43,14 +43,14 @@ nav {
     display: none;
     height: 4.5rem;
     cursor: pointer;
+}
 
-    .bar {
-        display: block;
-        width: 3.75rem;
-        height: 0.5rem;
-        background: v.$white;
-        margin: 0.75rem 0;
-    }
+.bar {
+    display: block;
+    height: 0.5rem;
+    width: 3.75rem;
+    background: v.$white;
+    margin: 0.75rem 0;
 }
 
 .headerTextImageContainer {
