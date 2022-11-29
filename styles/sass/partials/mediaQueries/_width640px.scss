@@ -1,0 +1,135 @@
+@use '../global/variables' as v;
+
+@media (max-width: 640px) {
+
+// General 
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+// Header
+
+    .navMenu {
+        position: absolute;
+        flex-direction: column;
+        top: -100%;
+        right: 0%;
+        text-align: center;
+        background: v.$secondaryColour;
+        width: 100%;
+        transition: all 0.5s ease;
+        padding: 2rem 0;
+
+        li {
+            padding: 1.5rem 0;
+        }
+
+        &.active {
+            top: 0%;
+            right: 0%;
+        }
+    }
+
+    .hamburgerMenu {
+        display: block;
+
+        .bar {
+            transition: all 0.5s ease;
+        }
+
+        &.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        &.active .bar:nth-child(1) {
+            transform: translateY(1.25rem) rotate(45deg);
+        }
+
+        &.active .bar:nth-child(3) {
+            transform: translateY(-1.25rem) rotate(-45deg);
+        }
+    }
+
+    h1 {
+        font-size: 4.6rem;
+        line-height: 6.2rem;
+    }
+
+    .headerImage {
+        min-width: 35rem;
+        margin-right: 3rem;
+    }
+
+
+// Technology Stack
+
+    .languageIcon {
+        height: 8rem;
+        width: 8rem;
+        transition: all 0.3s ease;
+    }
+
+
+// My Projects
+
+    .myProjects {
+        h3 {
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+        }
+    }
+
+    .projectContainer {
+        h4 {
+            font-size: 1.75rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    .projectToolsContainer {
+        .languageIcon {
+            height: 3.6rem;
+            width: 3.6rem;
+        }
+    }
+
+    .projectLinksContainer {
+        .fa-github,
+        .fa-link {
+            font-size: 3.6rem;
+        }
+    }
+
+
+    // Contact Me
+
+    .contactMe {
+        padding-bottom: 6rem;
+
+        h2 {
+            padding: 4rem 0 3.5rem 0;
+        }
+    }
+
+    .nameAndEmail {
+        label,
+        input {
+            font-size: 1.6rem;
+        }
+    }
+
+    .userMessage {
+        label,
+        textarea,
+        button {
+            font-size: 1.6rem;
+        }
+    }
+}

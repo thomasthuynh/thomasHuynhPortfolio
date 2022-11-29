@@ -4,7 +4,7 @@
 
 // Header
 
-    .navContainer {
+    .navMenu {
         li {
             padding-left: 4rem;
         }
@@ -96,6 +96,12 @@
 
     .projectLinksContainer {
         margin-left: 3rem;
+
+        .fa-github,
+        .fa-link {
+            margin-right: 0.75rem;
+            margin-left: 0.75rem;
+        }
     }
 
 

@@ -7,7 +7,11 @@
     height: 10vh;
 }
 
-.navContainer {
+nav {
+    display: flex;
+}
+
+.navMenu {
     display: flex;
 
     li {
@@ -32,6 +36,20 @@
         &:focus::after {
             width: 100%;
         }
+    }
+}
+
+.hamburgerMenu {
+    display: none;
+    height: 4.5rem;
+    cursor: pointer;
+
+    .bar {
+        display: block;
+        width: 3.75rem;
+        height: 0.5rem;
+        background: v.$white;
+        margin: 0.75rem 0;
     }
 }
 

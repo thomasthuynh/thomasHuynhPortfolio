@@ -309,18 +309,24 @@ p {
   height: 10vh;
 }
 
-.navContainer {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.navContainer li {
+
+.navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navMenu li {
   padding-left: 5rem;
 }
-.navContainer a {
+.navMenu a {
   position: relative;
 }
-.navContainer a::after {
+.navMenu a::after {
   content: "";
   height: 0.4rem;
   width: 0;
@@ -331,8 +337,21 @@ p {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-.navContainer a:hover::after, .navContainer a:focus::after {
+.navMenu a:hover::after, .navMenu a:focus::after {
   width: 100%;
+}
+
+.hamburgerMenu {
+  display: none;
+  height: 4.5rem;
+  cursor: pointer;
+}
+.hamburgerMenu .bar {
+  display: block;
+  width: 3.75rem;
+  height: 0.5rem;
+  background: #fff;
+  margin: 0.75rem 0;
 }
 
 .headerTextImageContainer {
@@ -440,13 +459,13 @@ p {
   padding-right: 1.5rem;
   padding-bottom: 0.5rem;
 }
-.technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon, .technologyStackIcons li:active .languageIcon {
+.technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-filter: brightness(125%);
           filter: brightness(125%);
 }
-.technologyStackIcons li:hover .languageText, .technologyStackIcons li:focus .languageText, .technologyStackIcons li:active .languageIcon {
+.technologyStackIcons li:hover .languageText, .technologyStackIcons li:focus .languageText {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -512,7 +531,7 @@ p {
 
 .projectLinksContainer .fa-github,
 .projectLinksContainer .fa-link {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-top: 1.5rem;
   margin-right: 2rem;
 }
@@ -748,7 +767,7 @@ footer {
   }
 }
 @media (max-width: 880px) {
-  .navContainer li {
+  .navMenu li {
     padding-left: 4rem;
   }
   .headerTextImageContainer {
@@ -830,6 +849,11 @@ footer {
   .projectLinksContainer {
     margin-left: 3rem;
   }
+  .projectLinksContainer .fa-github,
+.projectLinksContainer .fa-link {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
   .contactMeTextFormContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -851,5 +875,100 @@ footer {
   }
   .contactMeImage {
     display: none;
+  }
+}
+@media (max-width: 640px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  .navMenu {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: -100%;
+    right: 0%;
+    text-align: center;
+    background: #1a1a32;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 2rem 0;
+  }
+  .navMenu li {
+    padding: 1.5rem 0;
+  }
+  .navMenu.active {
+    top: 0%;
+    right: 0%;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+  .hamburgerMenu .bar {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .hamburgerMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerMenu.active .bar:nth-child(1) {
+    -webkit-transform: translateY(1.25rem) rotate(45deg);
+            transform: translateY(1.25rem) rotate(45deg);
+  }
+  .hamburgerMenu.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-1.25rem) rotate(-45deg);
+            transform: translateY(-1.25rem) rotate(-45deg);
+  }
+  h1 {
+    font-size: 4.6rem;
+    line-height: 6.2rem;
+  }
+  .headerImage {
+    min-width: 35rem;
+    margin-right: 3rem;
+  }
+  .languageIcon {
+    height: 8rem;
+    width: 8rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .myProjects h3 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .projectContainer h4 {
+    font-size: 1.75rem;
+    line-height: 2.4rem;
+  }
+  .projectToolsContainer .languageIcon {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+  .projectLinksContainer .fa-github,
+.projectLinksContainer .fa-link {
+    font-size: 3.6rem;
+  }
+  .contactMe {
+    padding-bottom: 6rem;
+  }
+  .contactMe h2 {
+    padding: 4rem 0 3.5rem 0;
+  }
+  .nameAndEmail label,
+.nameAndEmail input {
+    font-size: 1.6rem;
+  }
+  .userMessage label,
+.userMessage textarea,
+.userMessage button {
+    font-size: 1.6rem;
   }
 }
