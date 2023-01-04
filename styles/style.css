@@ -478,6 +478,11 @@ nav {
   transition: all 0.3s ease;
 }
 
+.githubIcon {
+  background: #fff;
+  border-radius: 10%;
+}
+
 .languageText {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
