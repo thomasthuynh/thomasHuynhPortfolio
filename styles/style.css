@@ -515,8 +515,17 @@ nav {
   padding: 2rem 0 4rem 0;
 }
 
+.projectImageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .projectImageContainer img {
   border-radius: 0.5rem;
+  width: 90%;
 }
 
 .projectToolsLinksContainer {
@@ -1011,8 +1020,8 @@ footer {
     margin-right: 1.5rem;
   }
   .languageIcon {
-    height: 7.2rem;
-    width: 7.2rem;
+    height: 6.3rem;
+    width: 6.3rem;
   }
   .myProjects h2 {
     padding: 4rem 0 5rem 0;
@@ -1029,21 +1038,21 @@ footer {
     line-height: 2.2rem;
   }
   .projectToolsContainer {
-    margin-right: 2rem;
-  }
-  .projectToolsContainer .languageIcon {
-    height: 3.3rem;
-    width: 3.3rem;
     margin-right: 1rem;
   }
+  .projectToolsContainer .languageIcon {
+    height: 3.1rem;
+    width: 3.1rem;
+    margin-right: 0.75rem;
+  }
   .projectLinksContainer {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   .projectLinksContainer .fa-github,
 .projectLinksContainer .fa-link {
-    font-size: 3.3rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
+    font-size: 3.1rem;
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
   }
   .contactMe h2 {
     padding: 4rem 0 2rem 0;
