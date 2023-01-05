@@ -66,6 +66,7 @@ nav {
 }
 
 .headerText {
+    animation: fadeRight 1.5s;
     p {
         padding: 2rem 0;
     }
@@ -85,7 +86,8 @@ nav {
     }
 }   
 
-.headerImage{
+.headerImage {
+    animation: fadeLeft 1.5s;
     margin-top: 7.5rem;
     min-width: 47.5rem;
 }
@@ -104,5 +106,29 @@ nav {
         &:focus {
           transform: scale(1.10);
       }
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-40rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(40rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0)
     }
 }

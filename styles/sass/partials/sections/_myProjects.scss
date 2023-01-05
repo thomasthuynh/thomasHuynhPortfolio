@@ -13,9 +13,8 @@
     padding-bottom: 12rem;
 }
 
-.projectTextToolsLinksContainer, 
-.projectImageContainer {
-    width: 45%;
+.projectTextToolsLinksContainer {
+    width: 50%;
 }
 
 .projectTextContainer {
@@ -25,12 +24,10 @@
 }
 
 .projectImageContainer {
-    display: flex;
-    justify-content: center;
-    
+    width: 40%;
+
     img {
         border-radius: 0.5rem;
-        width: 90%;
     }
 }
 

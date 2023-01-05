@@ -373,6 +373,10 @@ nav {
   width: 45%;
 }
 
+.headerText {
+  -webkit-animation: fadeRight 1.5s;
+          animation: fadeRight 1.5s;
+}
 .headerText p {
   padding: 2rem 0;
 }
@@ -387,6 +391,8 @@ nav {
 }
 
 .headerImage {
+  -webkit-animation: fadeLeft 1.5s;
+          animation: fadeLeft 1.5s;
   margin-top: 7.5rem;
   min-width: 47.5rem;
 }
@@ -407,6 +413,55 @@ nav {
           transform: scale(1.1);
 }
 
+@-webkit-keyframes fadeRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40rem);
+            transform: translateX(-40rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40rem);
+            transform: translateX(-40rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40rem);
+            transform: translateX(40rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(40rem);
+            transform: translateX(40rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .technologyStack {
   height: 50vh;
   display: -webkit-box;
@@ -506,9 +561,8 @@ nav {
   padding-bottom: 12rem;
 }
 
-.projectTextToolsLinksContainer,
-.projectImageContainer {
-  width: 45%;
+.projectTextToolsLinksContainer {
+  width: 50%;
 }
 
 .projectTextContainer p {
@@ -516,16 +570,10 @@ nav {
 }
 
 .projectImageContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 40%;
 }
 .projectImageContainer img {
   border-radius: 0.5rem;
-  width: 90%;
 }
 
 .projectToolsLinksContainer {
@@ -699,6 +747,9 @@ footer {
     font-size: 1.9rem;
     line-height: 2.6rem;
   }
+  .projectToolsContainer {
+    margin-right: 8.25rem;
+  }
   .projectToolsContainer .languageIcon {
     margin-right: 1.25rem;
   }
@@ -760,7 +811,7 @@ footer {
     padding-bottom: 8rem;
   }
   .projectToolsContainer {
-    margin-right: 7.5rem;
+    margin-right: 4.25rem;
   }
   .contactMe {
     padding-bottom: 6rem;
@@ -1022,6 +1073,10 @@ footer {
   .languageIcon {
     height: 6.3rem;
     width: 6.3rem;
+  }
+  .languageText {
+    font-size: 1.25rem;
+    padding-top: 0;
   }
   .myProjects h2 {
     padding: 4rem 0 5rem 0;
