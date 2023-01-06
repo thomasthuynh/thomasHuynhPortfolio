@@ -61,3 +61,65 @@
         }
     }
 }
+
+.carousel {
+    position: relative;
+    height: 100%;
+}
+
+.carouselTrackingContainer {
+    position: relative;
+    height: 100%;
+}
+
+.carouselSlide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.carouselButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    i {
+        color: v.$neon;
+        font-size: 3rem;
+    }
+}
+
+.carouselNav {
+    display: flex;
+    justify-content: center;
+}
+
+.carouselNavContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.carouselIndicator {
+    border: none;
+    border-radius: 50%;
+    background: v.$neon;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    opacity: 0.25;
+    cursor: pointer;
+
+    &.currentIndicator {
+        opacity: 0.75;
+    }
+}
+
+.carouselTracker {
+    transition: 0.5s ease;
+}
+
+.carouselTrackingContainer {
+    overflow: hidden;
+}
