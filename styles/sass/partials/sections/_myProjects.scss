@@ -64,7 +64,7 @@
 
 .carousel {
     position: relative;
-    height: 100%;
+    height: 27.5rem;
 }
 
 .carouselTrackingContainer {
@@ -73,11 +73,9 @@
 }
 
 .carouselSlide {
-    height: 100%;
-    width: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    width: 100%;
+    display: flex;
 }
 
 .carouselButton {
@@ -91,14 +89,13 @@
     }
 }
 
-.carouselNav {
+.carouselNavContainer {
     display: flex;
     justify-content: center;
 }
 
-.carouselNavContainer {
-    display: flex;
-    justify-content: center;
+.carouselNav {
+    margin: 0 1rem;
 }
 
 .carouselIndicator {

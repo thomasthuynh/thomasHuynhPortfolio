@@ -39,21 +39,32 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     targetSlide.classList.add("currentSlide");
 }
 
+const updateDots = (currentDot, targetDot) => {
+    currentDot.classList.remove("currentIndicator");
+    targetDot.classList.add("currentIndicator");
+}
+
 
 // On click, move to previous slide
 prevButton.addEventListener("click", e => {
     const currentSlide = track.querySelector(".currentSlide");
     const prevSlide = currentSlide.previousElementSibling;
+    const currentDot = dotsNav.querySelector(".currentIndicator");
+    const prevDot = currentDot.previousElementSibling;
 
     moveToSlide(track, currentSlide, prevSlide);
+    updateDots(currentDot, prevDot);
 })
 
 // On click, move to next slide
 nextButton.addEventListener("click", e => {
     const currentSlide = track.querySelector(".currentSlide");
     const nextSlide = currentSlide.nextElementSibling;
+    const currentDot = dotsNav.querySelector(".currentIndicator");
+    const nextDot = currentDot.nextElementSibling;
 
     moveToSlide(track, currentSlide, nextSlide);
+    updateDots(currentDot, nextDot);
 })
 
 // On nav indicator click, move to that slide
@@ -76,4 +87,5 @@ dotsNav.addEventListener("click", e => {
     const targetSlide = slides[targetIndex];
 
     moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
 })
