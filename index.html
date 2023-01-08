@@ -7,7 +7,13 @@
     <title>Thomas' Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/0f60a8fc75.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -108,7 +114,7 @@
 
                     <div class="projectTextContainer"> <!-- START .projectTextContainer -->
                         <h3>Sanctuary Helpers</h3>
-                        <p>A responsive multi-page website converted from a static photoshop design utilizing HTML and CSS fundamentals, and SCSS partials for styling arrangement.</p>
+                        <p>A responsive multi-page website converted from a static photoshop design utilizing HTML and CSS fundamentals and SCSS partials for styling arrangement.</p>
                     </div> <!-- END .projectTextContainer -->
                     
                     <div class="projectToolsLinksContainer"> <!-- START .projectToolsLinksContainer -->
@@ -130,57 +136,24 @@
 
                 </div> <!-- END .projectTextToolsLinksContainer -->
     
-                <!-- <div class="projectImageContainer"> START .projectImageContainer -->
-                    <!-- <img src="./images/Sanctuary Helpers Home.jpg" alt="First project image"> -->
-                <!-- </div> END .projectImageContainer -->
                 <div class="projectImageContainer"> <!-- START .projectImageContainer -->
 
-                    <div class="carousel"> <!-- START .carousel -->
-
-                        <div class="carouselTrackingContainer"> <!-- START .carouselTrackingContainer -->
-
-                            <ul class="carouselTracker"> <!-- START .carouselTracker -->
-
-                                <li class="carouselSlide currentSlide">
-                                    <img class="carouselImage"  src="./images/Sanctuary Helpers Home.jpg" alt="First project home page">
-                                </li>
-
-                                <li class="carouselSlide">
-                                    <img class="carouselImage"  src="./images/Sanctuary Helperes Blog.jpg" alt="First project blog page">
-                                </li>
-                                
-                                <li class="carouselSlide">
-                                    <img class="carouselImage"  src="./images/Sanctuary Helpers Contact.png" alt="First project contact page">
-                                </li>
-                                
-                            </ul> <!-- END .carouselTracker -->
-
-                        </div> <!-- END .carouselTrackingContainer -->
+                    <div class="swiper"> <!-- START .swiper -->
                         
-                        <div class="carouselNavContainer"> <!-- START .carouselNavContainer -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Sanctuary Helpers Home.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/Sanctuary Helperes Blog.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/Sanctuary Helpers Contact.png" alt=""></div>
+                        </div>
 
-                            <button class="carouselButton carouselButtonLeft">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </button>
-
-                            <div class="carouselNav"> <!-- START .carouselNav -->
-    
-                                <button class="carouselIndicator currentIndicator"></button>
-                                <button class="carouselIndicator"></button>
-                                <button class="carouselIndicator"></button>
-    
-                            </div> <!-- END .carouselNav -->
-
-                            <button class="carouselButton carouselButtonRight">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-
-                        </div> <!-- END .carouselNavContainer -->
-                        
-                    </div> <!-- END .carousel -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                    </div> <!-- END .swiper -->
 
                 </div> <!-- END .projectImageContainer -->
-
 
             </div> <!-- END .firstProjectContainer -->
 
@@ -214,7 +187,20 @@
                 </div> <!-- END .projectTextToolsLinksContainer -->
     
                 <div class="projectImageContainer"> <!-- START .projectImageContainer -->
-                    <img src="./images/Whos That Pokemon Home.png" alt="Second project image">
+
+                    <div class="swiper"> <!-- START .swiper -->
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Whos That Pokemon Home.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/Whos That Pokemon Main.png" alt=""></div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                    </div> <!-- END .swiper -->
                 </div> <!-- END .projectImageContainer -->
 
             </div> <!-- END .secondProjectContainer -->
@@ -248,7 +234,20 @@
                 </div> <!-- END .projectTextToolsLinksContainer -->
     
                 <div class="projectImageContainer"> <!-- START .projectImageContainer -->
-                    <img src="./images/Miniplex Home.png" alt="Third project image">
+
+                    <div class="swiper"> <!-- START .swiper -->
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/Miniplex Home.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/Miniplex Main.png" alt=""></div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                    </div> <!-- END .swiper -->
                 </div> <!-- END .projectImageContainer -->
 
             </div> <!-- END .thirdProjectContainer -->
@@ -296,6 +295,7 @@
         <p>Made by Thomas <span class="neonText">Huynh</span></p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./hamburgerMenu.js"></script>
 </body>
 </html>

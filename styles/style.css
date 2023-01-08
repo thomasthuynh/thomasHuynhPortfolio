@@ -602,68 +602,49 @@ nav {
   opacity: 0.75;
 }
 
-.carousel {
-  position: relative;
-  height: 30rem;
-}
-
-.carouselTrackingContainer {
-  position: relative;
-  height: 100%;
-}
-
-.carouselSlide {
-  position: absolute;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.carouselButton {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.carouselButton i {
+div.swiper-button-prev,
+div.swiper-button-next {
   color: #00BFA6;
-  font-size: 3rem;
+  font-weight: bold;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+div.swiper-button-prev::after,
+div.swiper-button-next::after {
+  font-size: 30px;
 }
 
-.carouselNavContainer {
+.swiper-button-prev {
+  padding-right: 2rem;
+}
+
+.swiper-button-next {
+  padding-left: 2rem;
+}
+
+span.swiper-pagination-bullet {
+  background: #00BFA6;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+}
+.swiper-slide img {
+  width: 80%;
+  height: 100%;
 }
 
-.carouselNav {
-  margin: 0 1rem;
-}
-
-.carouselIndicator {
-  border: none;
-  border-radius: 50%;
-  background: #00BFA6;
-  width: 2rem;
-  height: 2rem;
-  margin: 0.5rem;
-  opacity: 0.25;
-  cursor: pointer;
-}
-.carouselIndicator.currentIndicator {
-  opacity: 0.75;
-}
-
-.carouselTracker {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.carouselTrackingContainer {
-  overflow: hidden;
+.swiper-wrapper {
+  height: 80%;
+  padding-bottom: 5rem;
 }
 
 .contactMe {

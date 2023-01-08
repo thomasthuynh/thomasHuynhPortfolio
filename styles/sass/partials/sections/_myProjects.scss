@@ -62,61 +62,43 @@
     }
 }
 
-.carousel {
-    position: relative;
-    height: 30rem;
-}
+div.swiper-button-prev,
+div.swiper-button-next {
+    color: v.$neon;
+    font-weight: bold;
+    transform: translateY(-50%);
 
-.carouselTrackingContainer {
-    position: relative;
-    height: 100%;
-}
-
-.carouselSlide {
-    position: absolute;
-    width: 100%;
-    display: flex;
-}
-
-.carouselButton {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-
-    i {
-        color: v.$neon;
-        font-size: 3rem;
+    &::after {
+        font-size: 30px;
     }
 }
 
-.carouselNavContainer {
+.swiper-button-prev {
+    padding-right: 2rem;
+}
+
+.swiper-button-next {
+    padding-left: 2rem;
+}
+
+span.swiper-pagination-bullet {
+    background: v.$neon;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.swiper-slide {
     display: flex;
     justify-content: center;
-}
+    height: 100%;
 
-.carouselNav {
-    margin: 0 1rem;
-}
-
-.carouselIndicator {
-    border: none;
-    border-radius: 50%;
-    background: v.$neon;
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
-    opacity: 0.25;
-    cursor: pointer;
-
-    &.currentIndicator {
-        opacity: 0.75;
+    img {
+        width: 80%;
+        height: 100%;
     }
 }
 
-.carouselTracker {
-    transition: 0.5s ease;
-}
-
-.carouselTrackingContainer {
-    overflow: hidden;
+.swiper-wrapper {
+    height: 80%;
+    padding-bottom: 5rem;
 }
