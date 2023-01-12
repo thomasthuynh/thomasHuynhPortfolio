@@ -109,6 +109,62 @@ nav {
     }
 }
 
+.shape {
+    color: #fff;
+    font-size: 1.5rem;
+    position: fixed;
+    z-index: -1;
+}
+
+.shapeOne {
+    top: 20vh;
+    left: 10vw;
+    color: v.$neon;
+}
+
+.shapeTwo {
+    top: 20vh;
+    left: 50vw;
+}
+
+.shapeThree {
+    top: 20vh;
+    left: 85vw;
+    color: v.$neon;
+}
+
+.shapeFour {
+    top: 55vh;
+    left: 10vw;
+}
+
+.shapeFive {
+    top: 55vh;
+    left: 50vw;
+    color: v.$neon;
+}
+
+.shapeSix {
+    top: 55vh;
+    left: 85vw;
+}
+
+.shapeSeven {
+    top: 90vh;
+    left: 10vw;
+    color: v.$neon;
+}
+
+.shapeEight {
+    top: 90vh;
+    left: 50vw;
+}
+
+.shapeNine {
+    top: 90vh;
+    left: 85vw;
+}
+
 @keyframes fadeRight {
     0% {
         opacity: 0;

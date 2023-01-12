@@ -34,6 +34,11 @@ body {
     background-color: v.$primaryColour;
 }
 
+section:nth-of-type(even),
+footer {
+    background-color: v.$primaryColour;
+}
+
 section:nth-of-type(odd) {
     background-color: v.$secondaryColour;
 }

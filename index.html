@@ -16,7 +16,7 @@
     
 </head>
 <body>
-    <header>
+    <header onmousemove="moveBackground(event)">
         <div class="wrapper"> <!-- START .wrapper -->
             <div class="logoNavContainer">
                 <p class="logo">Thomas <span class="neonText">Huynh</span></p>
@@ -39,7 +39,7 @@
                 <div class="headerText">
                     <h1>Hey</h1>
                     <h1>I'm <span class="neonText">Thomas</span></h1>
-                    <p>I'm a Toronto based <span class="neonText">Frontend Web Developer</span> with a strong passion for building responsive and interactive web applications.</p>
+                    <p>I'm a Toronto based <span class="neonText">Front End Web Developer</span> with a strong passion for building responsive and interactive web applications.</p>
                     <a href="https://github.com/thomasthuynh" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/thomasthuynh/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
@@ -53,6 +53,17 @@
                 <a href="#technologyStack"><i class="fa-solid fa-caret-down"></i></a>
             </div>
         </div> <!-- END .wrapper -->
+
+        <i class="fa-solid fa-square-full shape shapeOne"></i>
+        <i class="fa-regular fa-square-full shape shapeTwo"></i>
+        <i class="fa-solid fa-circle shape shapeThree"></i>
+        <i class="fa-regular fa-circle shape shapeFour"></i>
+        <i class="fa-solid fa-square-full shape shapeFive"></i>
+        <i class="fa-solid fa-square-full shape shapeSix"></i>
+        <i class="fa-regular fa-circle shape shapeSeven"></i>
+        <i class="fa-regular fa-square-full shape shapeEight"></i>
+        <i class="fa-solid fa-circle shape shapeNine"></i>
+
     </header>
 
     <section id="technologyStack" class="technologyStack">
@@ -193,6 +204,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="./images/Whos That Pokemon Home.png" alt=""></div>
                             <div class="swiper-slide"><img src="./images/Whos That Pokemon Main.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/Whos That Pokemon Search.png" alt=""></div>
                         </div>
 
                         <div class="swiper-pagination"></div>
@@ -297,5 +309,6 @@
 
     <script src="./swiper.js"></script>
     <script src="./hamburgerMenu.js"></script>
+    <script src="./background.js"></script>
 </body>
 </html>

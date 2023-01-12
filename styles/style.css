@@ -256,6 +256,11 @@ body {
   background-color: #141428;
 }
 
+section:nth-of-type(even),
+footer {
+  background-color: #141428;
+}
+
 section:nth-of-type(odd) {
   background-color: #1a1a32;
 }
@@ -411,6 +416,62 @@ nav {
 .headerArrowContainer .fa-caret-down:hover, .headerArrowContainer .fa-caret-down:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.shape {
+  color: #fff;
+  font-size: 1.5rem;
+  position: fixed;
+  z-index: -1;
+}
+
+.shapeOne {
+  top: 20vh;
+  left: 10vw;
+  color: #00BFA6;
+}
+
+.shapeTwo {
+  top: 20vh;
+  left: 50vw;
+}
+
+.shapeThree {
+  top: 20vh;
+  left: 85vw;
+  color: #00BFA6;
+}
+
+.shapeFour {
+  top: 55vh;
+  left: 10vw;
+}
+
+.shapeFive {
+  top: 55vh;
+  left: 50vw;
+  color: #00BFA6;
+}
+
+.shapeSix {
+  top: 55vh;
+  left: 85vw;
+}
+
+.shapeSeven {
+  top: 90vh;
+  left: 10vw;
+  color: #00BFA6;
+}
+
+.shapeEight {
+  top: 90vh;
+  left: 50vw;
+}
+
+.shapeNine {
+  top: 90vh;
+  left: 85vw;
 }
 
 @-webkit-keyframes fadeRight {
@@ -997,11 +1058,6 @@ footer {
     display: none;
   }
 }
-@media (max-width: 760px) {
-  .carousel {
-    height: 35rem;
-  }
-}
 @media (max-width: 640px) {
   nav {
     font-size: 1.6rem;
@@ -1097,11 +1153,6 @@ footer {
 .userMessage textarea,
 .userMessage button {
     font-size: 1.6rem;
-  }
-}
-@media (max-width: 560px) {
-  .carousel {
-    height: 26rem;
   }
 }
 @media (max-width: 480px) {
@@ -1204,10 +1255,5 @@ footer {
 .userMessage textarea,
 .userMessage button {
     font-size: 1.5rem;
-  }
-}
-@media (max-width: 400px) {
-  .carousel {
-    height: 18rem;
   }
 }
