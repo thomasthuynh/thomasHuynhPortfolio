@@ -426,35 +426,35 @@ nav {
 }
 
 .shapeOne {
-  top: 20vh;
+  top: 15vh;
   left: 10vw;
   color: #00BFA6;
 }
 
 .shapeTwo {
-  top: 20vh;
+  top: 15vh;
   left: 50vw;
 }
 
 .shapeThree {
-  top: 20vh;
+  top: 15vh;
   left: 85vw;
   color: #00BFA6;
 }
 
 .shapeFour {
-  top: 55vh;
+  top: 50vh;
   left: 10vw;
 }
 
 .shapeFive {
-  top: 55vh;
+  top: 50vh;
   left: 50vw;
   color: #00BFA6;
 }
 
 .shapeSix {
-  top: 55vh;
+  top: 50vh;
   left: 85vw;
 }
 
@@ -672,7 +672,7 @@ div.swiper-button-next {
 }
 div.swiper-button-prev::after,
 div.swiper-button-next::after {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .swiper-button-prev {
@@ -863,9 +863,6 @@ footer {
 .projectLinksContainer .fa-link {
     margin-right: 1.5rem;
   }
-  .carousel {
-    height: 24rem;
-  }
   .contactMe {
     padding-bottom: 8rem;
   }
@@ -921,9 +918,6 @@ footer {
   }
   .projectToolsContainer {
     margin-right: 4.25rem;
-  }
-  .carousel {
-    height: 20.5rem;
   }
   .contactMe {
     padding-bottom: 6rem;
@@ -1032,8 +1026,17 @@ footer {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
-  .carousel {
-    height: 40rem;
+  div.swiper-button-prev::after,
+div.swiper-button-next::after {
+    font-size: 4rem;
+  }
+  span.swiper-pagination-bullet {
+    background: #00BFA6;
+    height: 2rem;
+    width: 2rem;
+  }
+  .swiper-wrapper {
+    padding-bottom: 6.5rem;
   }
   .contactMeTextFormContainer {
     -webkit-box-orient: vertical;
@@ -1119,6 +1122,9 @@ footer {
     min-width: 35rem;
     margin-right: 3rem;
   }
+  .shape {
+    display: none;
+  }
   .languageIcon {
     height: 8rem;
     width: 8rem;
@@ -1139,8 +1145,17 @@ footer {
 .projectLinksContainer .fa-link {
     font-size: 3.6rem;
   }
-  .carousel {
-    height: 30rem;
+  div.swiper-button-prev::after,
+div.swiper-button-next::after {
+    font-size: 3.5rem;
+  }
+  span.swiper-pagination-bullet {
+    background: #00BFA6;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+  .swiper-wrapper {
+    padding-bottom: 6rem;
   }
   .contactMe h2 {
     padding: 4rem 0 3.5rem 0;
@@ -1187,6 +1202,18 @@ footer {
   .headerImage {
     min-width: 28rem;
     margin-right: 1.5rem;
+  }
+  div.swiper-button-prev::after,
+div.swiper-button-next::after {
+    font-size: 3rem;
+  }
+  span.swiper-pagination-bullet {
+    background: #00BFA6;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .swiper-wrapper {
+    padding-bottom: 5rem;
   }
   .languageIcon {
     height: 6.3rem;
@@ -1255,5 +1282,22 @@ footer {
 .userMessage textarea,
 .userMessage button {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 380px) {
+  div.swiper-button-prev::after,
+div.swiper-button-next::after {
+    font-size: 2.5rem;
+  }
+  span.swiper-pagination-bullet {
+    background: #00BFA6;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  .swiper-slide img {
+    width: 77.5%;
+  }
+  .swiper-wrapper {
+    padding-bottom: 4.5rem;
   }
 }

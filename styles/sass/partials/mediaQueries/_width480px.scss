@@ -47,6 +47,22 @@
         margin-right: 1.5rem;
     }
 
+    div.swiper-button-prev,
+    div.swiper-button-next {
+        &::after {
+            font-size: 3rem;
+        }
+    }
+
+    span.swiper-pagination-bullet {
+        background: v.$neon;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 5rem;
+    }
 
 // Technology Stack
 

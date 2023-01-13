@@ -1,4 +1,4 @@
-const scale = 1 / 20;
+const scale = 1 / 15;
 
 const moveBackground = (event) => {
     const shapes = document.querySelectorAll('.shape');
@@ -8,8 +8,6 @@ const moveBackground = (event) => {
     shapes.forEach((shape, index) => {
         const isOdd = index % 2 !== 0;
         const directionValue = isOdd ? -1 : 1;
-        shape.style.transform = `translate(${x * directionValue}px, ${y * directionValue}px)`;
+        shape.style.transform = `translate(${x * directionValue}px, ${y * directionValue}px) rotate(${x * directionValue * 5}deg)`;
     })
 }
-
-// translate(${x * directionValue}px, ${y * directionValue}px)

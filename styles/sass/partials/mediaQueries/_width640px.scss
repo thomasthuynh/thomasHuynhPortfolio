@@ -72,6 +72,9 @@
         margin-right: 3rem;
     }
 
+    .shape {
+        display: none;
+    }
 
 // Technology Stack
 
@@ -111,8 +114,21 @@
         }
     }
 
-    .carousel {
-        height: 30rem;
+    div.swiper-button-prev,
+    div.swiper-button-next {
+        &::after {
+            font-size: 3.5rem;
+        }
+    }
+
+    span.swiper-pagination-bullet {
+        background: v.$neon;
+        height: 1.75rem;
+        width: 1.75rem;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 6rem;
     }
 
     // Contact Me
