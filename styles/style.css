@@ -433,43 +433,54 @@ nav {
 
 .shapeTwo {
   top: 15vh;
-  left: 50vw;
+  left: 37.5vw;
 }
 
 .shapeThree {
   top: 15vh;
-  left: 85vw;
+  left: 62.5vw;
   color: #00BFA6;
 }
 
 .shapeFour {
-  top: 50vh;
-  left: 10vw;
+  top: 15vh;
+  left: 85vw;
 }
 
 .shapeFive {
   top: 50vh;
-  left: 50vw;
+  left: 10vw;
   color: #00BFA6;
 }
 
 .shapeSix {
   top: 50vh;
-  left: 85vw;
+  left: 50vw;
 }
 
 .shapeSeven {
-  top: 90vh;
-  left: 10vw;
+  top: 50vh;
+  left: 85vw;
   color: #00BFA6;
 }
 
 .shapeEight {
   top: 90vh;
-  left: 50vw;
+  left: 10vw;
 }
 
 .shapeNine {
+  top: 90vh;
+  left: 37.5vw;
+}
+
+.shapeTen {
+  top: 90vh;
+  left: 62.5vw;
+  color: #00BFA6;
+}
+
+.shapeEleven {
   top: 90vh;
   left: 85vw;
 }
