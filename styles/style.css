@@ -841,7 +841,7 @@ footer {
     line-height: 7.8rem;
   }
   .headerText,
-.headerImage {
+  .headerImage {
     width: 50%;
   }
   .headerText p {
@@ -871,7 +871,7 @@ footer {
     margin-right: 1.25rem;
   }
   .projectLinksContainer .fa-github,
-.projectLinksContainer .fa-link {
+  .projectLinksContainer .fa-link {
     margin-right: 1.5rem;
   }
   .contactMe {
@@ -881,12 +881,12 @@ footer {
     padding: 4rem 0 6rem 0;
   }
   .nameAndEmail label,
-.nameAndEmail input {
+  .nameAndEmail input {
     font-size: 1.9rem;
   }
   .userMessage label,
-.userMessage textarea,
-.userMessage button {
+  .userMessage textarea,
+  .userMessage button {
     font-size: 1.9rem;
   }
 }
@@ -908,7 +908,7 @@ footer {
     line-height: 6.8rem;
   }
   .headerText,
-.headerImage {
+  .headerImage {
     width: 41%;
   }
   .headerText p {
@@ -937,15 +937,15 @@ footer {
     padding: 4rem 0 5rem 0;
   }
   .nameAndEmail label,
-.nameAndEmail input {
+  .nameAndEmail input {
     font-size: 1.75rem;
   }
   .nameContainer {
     margin-right: 4rem;
   }
   .userMessage label,
-.userMessage textarea,
-.userMessage button {
+  .userMessage textarea,
+  .userMessage button {
     font-size: 1.75rem;
   }
 }
@@ -963,7 +963,7 @@ footer {
             justify-content: center;
   }
   .headerText,
-.headerImage {
+  .headerImage {
     width: 60%;
   }
   .headerImage {
@@ -984,7 +984,7 @@ footer {
             align-items: center;
   }
   .technologyStackText,
-.technologyStackImages {
+  .technologyStackImages {
     width: 95%;
   }
   .technologyStackText h2 {
@@ -1007,7 +1007,7 @@ footer {
     padding-bottom: 12rem;
   }
   .projectTextToolsLinksContainer,
-.projectImageContainer {
+  .projectImageContainer {
     width: 95%;
   }
   .projectTextContainer p {
@@ -1033,12 +1033,12 @@ footer {
     margin-left: 3rem;
   }
   .projectLinksContainer .fa-github,
-.projectLinksContainer .fa-link {
+  .projectLinksContainer .fa-link {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
   div.swiper-button-prev::after,
-div.swiper-button-next::after {
+  div.swiper-button-next::after {
     font-size: 4rem;
   }
   span.swiper-pagination-bullet {
@@ -1059,7 +1059,7 @@ div.swiper-button-next::after {
             align-items: center;
   }
   .contactMeText,
-.contactMeForm {
+  .contactMeForm {
     width: 95%;
   }
   .contactMe h2 {
@@ -1107,6 +1107,9 @@ div.swiper-button-next::after {
     top: 0%;
     right: 0%;
   }
+  .shape {
+    display: none !important;
+  }
   .hamburgerMenu {
     display: block;
   }
@@ -1153,11 +1156,11 @@ div.swiper-button-next::after {
     width: 3.6rem;
   }
   .projectLinksContainer .fa-github,
-.projectLinksContainer .fa-link {
+  .projectLinksContainer .fa-link {
     font-size: 3.6rem;
   }
   div.swiper-button-prev::after,
-div.swiper-button-next::after {
+  div.swiper-button-next::after {
     font-size: 3.5rem;
   }
   span.swiper-pagination-bullet {
@@ -1172,12 +1175,12 @@ div.swiper-button-next::after {
     padding: 4rem 0 3.5rem 0;
   }
   .nameAndEmail label,
-.nameAndEmail input {
+  .nameAndEmail input {
     font-size: 1.6rem;
   }
   .userMessage label,
-.userMessage textarea,
-.userMessage button {
+  .userMessage textarea,
+  .userMessage button {
     font-size: 1.6rem;
   }
 }
@@ -1207,24 +1210,12 @@ div.swiper-button-next::after {
     line-height: 5.8rem;
   }
   .headerText,
-.headerImage {
+  .headerImage {
     width: 80%;
   }
   .headerImage {
     min-width: 28rem;
     margin-right: 1.5rem;
-  }
-  div.swiper-button-prev::after,
-div.swiper-button-next::after {
-    font-size: 3rem;
-  }
-  span.swiper-pagination-bullet {
-    background: #00BFA6;
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-  .swiper-wrapper {
-    padding-bottom: 5rem;
   }
   .languageIcon {
     height: 6.3rem;
@@ -1260,13 +1251,22 @@ div.swiper-button-next::after {
     margin-left: 1rem;
   }
   .projectLinksContainer .fa-github,
-.projectLinksContainer .fa-link {
+  .projectLinksContainer .fa-link {
     font-size: 3.1rem;
     margin-right: 0.25rem;
     margin-left: 0.25rem;
   }
-  .carousel {
-    height: 22rem;
+  div.swiper-button-prev::after,
+  div.swiper-button-next::after {
+    font-size: 3rem;
+  }
+  span.swiper-pagination-bullet {
+    background: #00BFA6;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .swiper-wrapper {
+    padding-bottom: 5rem;
   }
   .contactMe h2 {
     padding: 4rem 0 2rem 0;
@@ -1282,7 +1282,7 @@ div.swiper-button-next::after {
     width: 80%;
   }
   .nameAndEmail label,
-.nameAndEmail input {
+  .nameAndEmail input {
     font-size: 1.5rem;
   }
   .nameContainer {
@@ -1290,14 +1290,14 @@ div.swiper-button-next::after {
     margin-bottom: 2rem;
   }
   .userMessage label,
-.userMessage textarea,
-.userMessage button {
+  .userMessage textarea,
+  .userMessage button {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 380px) {
   div.swiper-button-prev::after,
-div.swiper-button-next::after {
+  div.swiper-button-next::after {
     font-size: 2.5rem;
   }
   span.swiper-pagination-bullet {
