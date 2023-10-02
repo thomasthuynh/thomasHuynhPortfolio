@@ -1,6 +1,8 @@
 @use '../global/variables' as v;
 
 .myProjects {
+    padding: 2.4rem 0;
+
     h2 {
         text-align: center;
         padding: 4rem 0 10rem 0;
@@ -81,16 +83,32 @@ div.swiper-button-next {
     padding-left: 2rem;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
 span.swiper-pagination-bullet {
     background: v.$neon;
     height: 1.5rem;
     width: 1.5rem;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
     height: 100%;
+    text-align: center;
+
+    a {
+        max-width: 100%;
+    }
 
     img {
         width: 80%;

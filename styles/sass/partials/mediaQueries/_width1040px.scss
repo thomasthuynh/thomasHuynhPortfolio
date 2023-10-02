@@ -1,93 +1,99 @@
-@use '../global/variables' as v;
+@use "../global/variables" as v;
 
 @media (max-width: 1040px) {
-// General
+  // General
+
+  h2 {
+    font-size: 2.7rem;
+    line-height: 4.6rem;
+  }
+
+  p {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+
+  // Header
+
+  nav {
+    font-size: 1.75rem;
+    line-height: 3rem;
+  }
+
+  h1 {
+    font-size: 5.2rem;
+    line-height: 6.8rem;
+  }
+
+  .headerText,
+  .headerImage {
+    width: 41%;
+  }
+
+  .headerText {
+    p {
+      padding: 1.5rem 0;
+    }
+  }
+
+  .headerImage {
+    min-width: 42.5rem;
+  }
+
+  // Technology Stack
+
+    .languageIcon {
+        height: 8.8rem;
+        width: 8.8rem;
+      }
+
+  // My Projects
+
+  .myProjects {
+    h2 {
+      padding: 4rem 0 7rem 0;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      line-height: 3.2rem;
+    }
+  }
+
+  .projectContainer {
+    padding-bottom: 8rem;
+  }
+
+  .projectToolsContainer {
+    margin-right: 4.25rem;
+  }
+
+  // Contact Me
+
+  .contactMe {
+    padding-bottom: 6rem;
 
     h2 {
-        font-size: 2.7rem;
-        line-height: 4.6rem;
+      padding: 4rem 0 5rem 0;
     }
+  }
 
-    p {
-        font-size: 1.75rem;
-        line-height: 3rem;
+  .nameAndEmail {
+    label,
+    input {
+      font-size: 1.75rem;
     }
+  }
 
+  .nameContainer {
+    margin-right: 4rem;
+  }
 
-// Header
-
-    nav {
-        font-size: 1.75rem;
-        line-height: 3rem;
+  .userMessage {
+    label,
+    textarea,
+    button {
+      font-size: 1.75rem;
     }
-
-    h1 {
-        font-size: 5.2rem;
-        line-height: 6.8rem;
-    }
-
-    .headerText, 
-    .headerImage {
-        width: 41%;
-    }
-
-    .headerText {
-        p {
-            padding: 1.5rem 0;
-        }
-    }
-
-    .headerImage {
-        min-width: 42.5rem;
-    }
-
-// My Projects 
-
-    .myProjects {
-        h2 {
-            padding: 4rem 0 7rem 0;
-        }
-
-        h3 {
-            font-size: 2.5rem;
-            line-height: 3.2rem;
-        }
-    }
-
-    .projectContainer {
-        padding-bottom: 8rem;
-    }
-
-    .projectToolsContainer {
-        margin-right: 4.25rem;
-    }
-
-// Contact Me
-
-    .contactMe {
-        padding-bottom: 6rem;
-
-        h2 {
-            padding: 4rem 0 5rem 0;
-        }
-    }
-
-    .nameAndEmail {
-        label,
-        input {
-            font-size: 1.75rem;
-        }
-    }
-
-    .nameContainer {
-        margin-right: 4rem;
-    }
-
-    .userMessage {
-        label,
-        textarea,
-        button {
-            font-size: 1.75rem;
-        }
-    }
+  }
 }

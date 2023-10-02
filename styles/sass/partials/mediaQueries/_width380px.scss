@@ -1,6 +1,14 @@
 @use '../global/variables' as v;
 
 @media (max-width: 380px) {
+
+    // Technology Stack
+
+    .languageIcon {
+        height: 5rem;
+        width: 5rem;
+    }
+
     div.swiper-button-prev,
     div.swiper-button-next {
         &::after {

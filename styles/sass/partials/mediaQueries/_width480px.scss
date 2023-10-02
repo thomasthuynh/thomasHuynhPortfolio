@@ -1,157 +1,164 @@
-@use '../global/variables' as v;
+@use "../global/variables" as v;
 
 @media (max-width: 480px) {
+  // General
 
-// General 
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
 
-    h2 {
-        font-size: 2.4rem;
-        line-height: 3.8rem;
+  p {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  // Header
+
+  .bar {
+    height: 0.4rem;
+    width: 3.5rem;
+  }
+
+  .hamburgerMenu {
+    &.active .bar:nth-child(1) {
+      transform: translateY(1.15rem) rotate(45deg);
     }
 
+    &.active .bar:nth-child(3) {
+      transform: translateY(-1.15rem) rotate(-45deg);
+    }
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    line-height: 5.8rem;
+  }
+
+  .headerText,
+  .headerImage {
+    width: 80%;
+  }
+
+  .headerImage {
+    min-width: 28rem;
+    margin-right: 1.5rem;
+  }
+
+  // Technology Stack
+
+  .technologyStack {
+    padding: 2rem;
+  }
+
+  .technologyStackText {
     p {
-        font-size: 1.5rem;
-        line-height: 2.6rem;
+        padding-bottom: 0;
+    }
+  }
+
+  .languageIcon {
+    height: 5.8rem;
+    width: 5.8rem;
+  }
+
+  .languageText {
+    font-size: 1.25rem;
+    padding-top: 0;
+  }
+
+  // My Projects
+
+  .myProjects {
+    h2 {
+      padding: 4rem 0 5rem 0;
     }
 
-// Header
-
-    .bar {
-        height: 0.4rem;
-        width: 3.5rem;
+    h3 {
+      font-size: 2.1rem;
+      line-height: 2.6rem;
     }
+  }
 
-    .hamburgerMenu {
+  .projectContainer {
+    padding-bottom: 7.6rem;
 
-        &.active .bar:nth-child(1) {
-            transform: translateY(1.15rem) rotate(45deg);
-        }
-
-        &.active .bar:nth-child(3) {
-            transform: translateY(-1.15rem) rotate(-45deg);
-        }
+    h4 {
+      font-size: 1.65rem;
+      line-height: 2.2rem;
     }
+  }
 
-    h1 {
-        font-size: 4.2rem;
-        line-height: 5.8rem;
-    }
-
-    .headerText, 
-    .headerImage {
-        width: 80%;
-    }
-
-    .headerImage {
-        min-width: 28rem;
-        margin-right: 1.5rem;
-    }
-
-// Technology Stack
+  .projectToolsContainer {
+    margin-right: 1rem;
 
     .languageIcon {
-        height: 6.3rem;
-        width: 6.3rem;
+      height: 3.1rem;
+      width: 3.1rem;
+      margin-right: 0.75rem;
+    }
+  }
+
+  .projectLinksContainer {
+    margin-left: 1rem;
+
+    .fa-github,
+    .fa-link {
+      font-size: 3.1rem;
+      margin-right: 0.25rem;
+      margin-left: 0.25rem;
+    }
+  }
+
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    &::after {
+      font-size: 3rem;
+    }
+  }
+
+  span.swiper-pagination-bullet {
+    background: v.$neon;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 5rem;
+  }
+
+  // Contact Me
+
+  .contactMe {
+    h2 {
+      padding: 4rem 0 2rem 0;
+    }
+  }
+
+  .nameAndEmail {
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    input {
+      width: 80%;
     }
 
-    .languageText {
-        font-size: 1.25rem;
-        padding-top: 0;
+    label,
+    input {
+      font-size: 1.5rem;
     }
+  }
 
+  .nameContainer {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
 
-// My Projects
-
-    .myProjects {
-        h2 {
-            padding: 4rem 0 5rem 0;
-        }
-
-        h3 {
-            font-size: 2.1rem;
-            line-height: 2.6rem;
-        }
+  .userMessage {
+    label,
+    textarea,
+    button {
+      font-size: 1.5rem;
     }
-
-    .projectContainer {
-        padding-bottom: 10rem;
-
-        h4 {
-            font-size: 1.65rem;
-            line-height: 2.2rem;
-        }
-    }
-
-    .projectToolsContainer {
-        margin-right: 1rem;
-
-        .languageIcon {
-            height: 3.1rem;
-            width: 3.1rem;
-            margin-right: 0.75rem;
-        }
-    }
-
-    .projectLinksContainer {
-        margin-left: 1rem;
-
-        .fa-github,
-        .fa-link {
-            font-size: 3.1rem;
-            margin-right: 0.25rem;
-            margin-left: 0.25rem;
-        }
-    }
-
-    div.swiper-button-prev,
-    div.swiper-button-next {
-        &::after {
-            font-size: 3rem;
-        }
-    }
-
-    span.swiper-pagination-bullet {
-        background: v.$neon;
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    .swiper-wrapper {
-        padding-bottom: 5rem;
-    }
-
-// Contact Me
-
-    .contactMe {
-        h2 {
-            padding: 4rem 0 2rem 0;
-        }
-    }
-
-    .nameAndEmail {
-        flex-direction: column;
-        margin-bottom: 2rem;
-
-        input {
-            width: 80%;
-        }
-
-        label,
-        input {
-            font-size: 1.5rem;
-        }
-    }
-
-    .nameContainer {
-        margin-right: 0rem;
-        margin-bottom: 2rem;
-    }
-
-    .userMessage {
-        label,
-        textarea,
-        button {
-            font-size: 1.5rem;
-        }
-    }
+  }
 }

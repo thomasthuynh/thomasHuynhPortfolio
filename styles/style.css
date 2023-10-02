@@ -535,7 +535,6 @@ nav {
   }
 }
 .technologyStack {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,14 +547,23 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.technologyStackText,
+.technologyStackText {
+  width: 100%;
+  padding: 4.8rem 0;
+}
+
 .technologyStackImages {
-  width: 45%;
+  width: 60%;
 }
 
 .technologyStackText {
@@ -580,12 +588,15 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2.4rem;
 }
 .technologyStackIcons li {
   width: 25%;
   text-align: center;
-  padding-right: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2.4rem;
 }
 .technologyStackIcons li:hover .languageIcon, .technologyStackIcons li:focus .languageIcon {
   -webkit-transform: scale(1.1);
@@ -618,6 +629,9 @@ nav {
   padding-top: 0.5rem;
 }
 
+.myProjects {
+  padding: 2.4rem 0;
+}
 .myProjects h2 {
   text-align: center;
   padding: 4rem 0 10rem 0;
@@ -694,10 +708,18 @@ div.swiper-button-next::after {
   padding-left: 2rem;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 0.5;
+}
+
 span.swiper-pagination-bullet {
   background: #00BFA6;
   height: 1.5rem;
   width: 1.5rem;
+}
+span.swiper-pagination-bullet:hover {
+  opacity: 0.5;
 }
 
 .swiper-slide {
@@ -708,6 +730,10 @@ span.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  text-align: center;
+}
+.swiper-slide a {
+  max-width: 100%;
 }
 .swiper-slide img {
   width: 80%;
@@ -867,9 +893,6 @@ footer {
   .projectToolsContainer {
     margin-right: 8.25rem;
   }
-  .projectToolsContainer .languageIcon {
-    margin-right: 1.25rem;
-  }
   .projectLinksContainer .fa-github,
   .projectLinksContainer .fa-link {
     margin-right: 1.5rem;
@@ -916,6 +939,10 @@ footer {
   }
   .headerImage {
     min-width: 42.5rem;
+  }
+  .languageIcon {
+    height: 8.8rem;
+    width: 8.8rem;
   }
   .myProjects h2 {
     padding: 4rem 0 7rem 0;
@@ -991,7 +1018,7 @@ footer {
     text-align: center;
   }
   .technologyStackText p {
-    padding-bottom: 5rem;
+    padding-bottom: 3.6rem;
   }
   .myProjects h2 {
     padding: 4rem 0 6rem 0;
@@ -1139,6 +1166,9 @@ footer {
   .shape {
     display: none;
   }
+  .technologyStackText p {
+    padding-bottom: 2.4rem;
+  }
   .languageIcon {
     height: 8rem;
     width: 8rem;
@@ -1191,7 +1221,7 @@ footer {
   }
   p {
     font-size: 1.5rem;
-    line-height: 2.6rem;
+    line-height: 2.4rem;
   }
   .bar {
     height: 0.4rem;
@@ -1217,9 +1247,15 @@ footer {
     min-width: 28rem;
     margin-right: 1.5rem;
   }
+  .technologyStack {
+    padding: 2rem;
+  }
+  .technologyStackText p {
+    padding-bottom: 0;
+  }
   .languageIcon {
-    height: 6.3rem;
-    width: 6.3rem;
+    height: 5.8rem;
+    width: 5.8rem;
   }
   .languageText {
     font-size: 1.25rem;
@@ -1233,7 +1269,7 @@ footer {
     line-height: 2.6rem;
   }
   .projectContainer {
-    padding-bottom: 10rem;
+    padding-bottom: 7.6rem;
   }
   .projectContainer h4 {
     font-size: 1.65rem;
@@ -1296,6 +1332,10 @@ footer {
   }
 }
 @media (max-width: 380px) {
+  .languageIcon {
+    height: 5rem;
+    width: 5rem;
+  }
   div.swiper-button-prev::after,
   div.swiper-button-next::after {
     font-size: 2.5rem;

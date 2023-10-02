@@ -1,19 +1,25 @@
 @use '../global/variables' as v;
 
 .technologyStack {
-    height: 50vh;
+    // height: 50vh;
     display: flex;
     align-items: center;
 }
 
 .technologyStackTextImageContainer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-.technologyStackText, 
+.technologyStackText {
+    width: 100%;
+    padding: 4.8rem 0;
+}
+
 .technologyStackImages {
-    width: 45%;
+    width: 60%;
 }
 
 .technologyStackText {
@@ -29,12 +35,13 @@
 .technologyStackIcons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2.4rem;
 
     li {
         width: 25%;
         text-align: center;
-        padding-right: 1.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 2.4rem;
 
         &:hover .languageIcon,
         &:focus .languageIcon {

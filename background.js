@@ -6,7 +6,6 @@ header.addEventListener('mousemove', (event) => {
     const shapes = document.querySelectorAll('.shape');
     const x = event.clientX * scale;
     const y = event.clientY * scale;
-    console.log("This works")
 
     shapes.forEach((shape, index) => {
         const isOdd = index % 2 !== 0;

@@ -1,160 +1,164 @@
-@use '../global/variables' as v;
+@use "../global/variables" as v;
 
 @media (max-width: 640px) {
+  // General
 
-// General 
+  nav {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
 
-    nav {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+  h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  // Header
+
+  .navMenu {
+    position: absolute;
+    flex-direction: column;
+    top: -100%;
+    right: 0%;
+    text-align: center;
+    background: v.$secondaryColour;
+    width: 100%;
+    transition: all 0.5s ease;
+    padding: 2rem 0;
+
+    li {
+      padding: 1.5rem 0;
     }
 
-    h2 {
-        font-size: 2.5rem;
-        line-height: 4rem;
+    &.active {
+      top: 0%;
+      right: 0%;
+    }
+  }
+
+  .shape {
+    display: none !important;
+  }
+
+  .hamburgerMenu {
+    display: block;
+
+    .bar {
+      transition: all 0.5s ease;
     }
 
+    &.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.active .bar:nth-child(1) {
+      transform: translateY(1.25rem) rotate(45deg);
+    }
+
+    &.active .bar:nth-child(3) {
+      transform: translateY(-1.25rem) rotate(-45deg);
+    }
+  }
+
+  h1 {
+    font-size: 4.6rem;
+    line-height: 6.2rem;
+  }
+
+  .headerImage {
+    min-width: 35rem;
+    margin-right: 3rem;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  // Technology Stack
+
+  .technologyStackText {
     p {
-        font-size: 1.6rem;
-        line-height: 2.8rem;
+      padding-bottom: 2.4rem;
     }
+  }
 
-// Header
+  .languageIcon {
+    height: 8rem;
+    width: 8rem;
+  }
 
-    .navMenu {
-        position: absolute;
-        flex-direction: column;
-        top: -100%;
-        right: 0%;
-        text-align: center;
-        background: v.$secondaryColour;
-        width: 100%;
-        transition: all 0.5s ease;
-        padding: 2rem 0;
+  // My Projects
 
-        li {
-            padding: 1.5rem 0;
-        }
-
-        &.active {
-            top: 0%;
-            right: 0%;
-        }
+  .myProjects {
+    h3 {
+      font-size: 2.2rem;
+      line-height: 2.8rem;
     }
+  }
 
-    .shape {
-        display: none !important;
+  .projectContainer {
+    h4 {
+      font-size: 1.75rem;
+      line-height: 2.4rem;
     }
+  }
 
-    .hamburgerMenu {
-        display: block;
-
-        .bar {
-            transition: all 0.5s ease;
-        }
-
-        &.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-
-        &.active .bar:nth-child(1) {
-            transform: translateY(1.25rem) rotate(45deg);
-        }
-
-        &.active .bar:nth-child(3) {
-            transform: translateY(-1.25rem) rotate(-45deg);
-        }
-    }
-
-    h1 {
-        font-size: 4.6rem;
-        line-height: 6.2rem;
-    }
-
-    .headerImage {
-        min-width: 35rem;
-        margin-right: 3rem;
-    }
-
-    .shape {
-        display: none;
-    }
-
-// Technology Stack
-
+  .projectToolsContainer {
     .languageIcon {
-        height: 8rem;
-        width: 8rem;
+      height: 3.6rem;
+      width: 3.6rem;
     }
+  }
 
-
-// My Projects
-
-    .myProjects {
-        h3 {
-            font-size: 2.2rem;
-            line-height: 2.8rem;
-        }
+  .projectLinksContainer {
+    .fa-github,
+    .fa-link {
+      font-size: 3.6rem;
     }
+  }
 
-    .projectContainer {
-        h4 {
-            font-size: 1.75rem;
-            line-height: 2.4rem;
-        }
+  div.swiper-button-prev,
+  div.swiper-button-next {
+    &::after {
+      font-size: 3.5rem;
     }
+  }
 
-    .projectToolsContainer {
-        .languageIcon {
-            height: 3.6rem;
-            width: 3.6rem;
-        }
+  span.swiper-pagination-bullet {
+    background: v.$neon;
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 6rem;
+  }
+
+  // Contact Me
+
+  .contactMe {
+    h2 {
+      padding: 4rem 0 3.5rem 0;
     }
+  }
 
-    .projectLinksContainer {
-        .fa-github,
-        .fa-link {
-            font-size: 3.6rem;
-        }
+  .nameAndEmail {
+    label,
+    input {
+      font-size: 1.6rem;
     }
+  }
 
-    div.swiper-button-prev,
-    div.swiper-button-next {
-        &::after {
-            font-size: 3.5rem;
-        }
+  .userMessage {
+    label,
+    textarea,
+    button {
+      font-size: 1.6rem;
     }
-
-    span.swiper-pagination-bullet {
-        background: v.$neon;
-        height: 1.75rem;
-        width: 1.75rem;
-    }
-
-    .swiper-wrapper {
-        padding-bottom: 6rem;
-    }
-
-    // Contact Me
-
-    .contactMe {
-        h2 {
-            padding: 4rem 0 3.5rem 0;
-        }
-    }
-
-    .nameAndEmail {
-        label,
-        input {
-            font-size: 1.6rem;
-        }
-    }
-
-    .userMessage {
-        label,
-        textarea,
-        button {
-            font-size: 1.6rem;
-        }
-    }
+  }
 }
